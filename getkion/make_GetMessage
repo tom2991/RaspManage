@@ -1,0 +1,7 @@
+
+GetMessage:
+	g++ -Wall -o GetMessage.o -c GetMessage.cpp
+	g++ -Wall -o GetTemp.o -c GetTemp.cpp
+	g++ -lwiringPi GetMessage.o GetTemp.o -o GetMessage
+clean:
+	$(RM) GetMessage GetMessage.o GetTemp.o

@@ -1,0 +1,7 @@
+
+Decision:
+	g++ -Wall -o Decision.o -c Decision.cpp
+	g++ -Wall -o GetTemp.o -c GetTemp.cpp
+	g++ -lwiringPi Decision.o GetTemp.o -o Decision
+clean:
+	$(RM) Decision Decision.o GetTemp.o
